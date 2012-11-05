@@ -1,0 +1,288 @@
+/*
+Theme Name: Arpo Gallery
+Author: Mahla Delpak
+Author URI: https://github.com/mahlad
+Description: Wordpress Theme for Arpo Gallery project.
+Version: 0.1
+Tags:gallery,zoomslideshow
+*/
+ /*---------------Global Section---------------*/
+ *{
+	 margin:0;
+	 padding:0;
+ }
+ body{
+ 	
+ }
+h1{
+	font-size:26px;	
+}
+ h2{
+	font-size:24px;	 
+ }
+h3{
+	font-size:22px;	
+}
+div.out{
+	position:absolute;
+	left:0;
+	top:0;
+	z-index: 3;	
+}
+ /*---------------Header(General Right Nav)---------------*/
+
+header.general{
+	width:230px;
+	position:fixed;
+	background:rgba(0,0,0,0.8);
+	height:100%;
+	left:20px;
+		
+}
+header.general article{
+	position:relative;
+	top:50px;
+	
+}
+header.general article > img{
+	position:relative;
+}
+nav.headernav{
+	margin-top:50px;
+}
+nav.headernav ul li{
+	margin:5px 15px;
+	padding:15px 0;
+	text-align:center;
+	min-height:20px;
+	position: relative;	
+}
+nav.headernav ul li a{
+	color:#b3b3b3;
+	text-decoration:none;
+	font-weight:bolder;
+	line-height:20px;
+ }
+ nav.headernav ul li:hover a,nav.headernav ul li:hover a span{
+	color:#fff;	 
+ }
+ nav.headernav ul li a span{
+	font-size:14px;
+	font-weight:normal;
+	text-align:center;
+ }
+ nav.headernav > ul li ul.sub-menu{
+	display:none;
+	left:195px;
+	top:0;
+	bottom: 0;
+	width:200px;	
+	z-index:2; 
+ }
+ nav.headernav ul li li{
+	float:none;
+	padding:0;
+	margin:0;
+	background-color:#f2f2f2;
+	height:40px;
+ }
+ nav.headernav ul li:hover{
+	background-color:#000;	 
+ }
+ nav.headernav ul li:hover ul.sub-menu{
+	display:block;
+	background:url(images/navigation_ul_bg.png) no-repeat 0px 14px ;
+	position:absolute;
+	padding:0 0 0 7px;	 
+ }
+ nav.headernav ul li:hover ul.sub-menu li:hover{
+	 background:#f2f2f2;
+	 color:#000;
+ }
+nav.headernav ul li:hover ul.sub-menu li a{
+	color:#666; 
+	line-height:40px; 
+}
+nav.headernav ul li:hover ul.sub-menu li:hover a{
+	color:#000;  
+}
+ul.sub-menu li a h3{
+	font-size: 20px;
+	font-weight: normal;
+}
+/*---------------Index page---------------*/
+ div.bg-slide img{
+	/*background:url(images/img3.jpg) 0 0;*/
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed; 
+	background-repeat: no-repeat; 
+	-moz-background-size:100% 100%;
+	-webkit-background-size:100% 100%;
+	-o-background-size:100% 100%;
+	-ms-background-size:100% 100%;
+	background-size:100% 100%; 
+	z-index: 0; 
+	position: fixed;
+ }
+/*---------------background for all pages----------------*/
+
+div.bg-fixed{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	overflow:hidden;	
+}
+ div.bg-fixed:first-child img{
+	top:34px;
+	left:0;
+	width:1280px;
+	height:720px;	
+}
+/*---------------Header For all pages---------------*/
+
+div.container header.pages{
+	height:87px;
+	font-weight:bolder;
+	padding:0 40px;
+	position:relative;	
+}
+div.container header.pages h1{
+	line-height:87px;
+	color:#fff;
+	border-bottom:3px solid #fff;
+	text-align:right;
+}
+div.container #main{
+	padding:5px 40px 15px;
+	text-align: right;
+}
+
+
+/*---------------footer page---------------*/
+div.container footer{
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+	text-align:right;
+	padding:2px 40px;
+}
+div.container footer div.bottom{
+	margin-top:50px;
+		
+}
+div.container footer div.bottom section {
+	padding-left:0;
+	min-height:150px;
+}
+div.container section.padleft{
+	padding-left:30px !important;		
+}
+div.bottom section h3{
+	border-bottom:3px solid rgba(255,255,255,0.5);
+	padding:20px 0;	
+}
+div.bottom section p{
+	color:#666;
+	padding:20px 0;
+}
+/*div.container footer div.copyright{
+	height:40px;
+}*/
+div.copyright div.textwidget{
+	color:#fff;
+	text-align:right;
+	line-height:40px;
+	float:right;
+	font-size:12px;
+}
+section.padleft > ul{
+	margin: 20px 2px;
+}
+section.padleft > ul >li:hover a{
+	color: #fff;
+}
+section.padleft > ul > li > a{
+	color: rgb(102,102,102);
+	padding: 2px 0;
+	display: block;
+	text-decoration: none;
+}
+section.padleft > div.textwidget{
+	margin: 20px 2px;
+	color: rgb(102,102,102);
+}
+/*---------------About page---------------*/
+#main p{
+	margin:10px 0;	
+	line-height: 25px;		
+	font-size: 17px;
+	color:#fff;
+}
+#main a{
+	position: relative;
+}
+#main h2{
+	color: #fff;
+	font-size: 22px;
+	margin: 15px 0;
+	text-align: center !important;
+}
+/*---------------Album page---------------*/
+#main section.album{
+	margin:15px;
+}
+#main section.album h3{
+	color:#fff;
+	text-align:right;
+	padding-top:20px;	
+}
+section.album p{
+	margin: 0!important;
+	/*display: none;
+	width: 100%;
+	left:0;
+	right: 0;
+	position: absolute;*/
+}
+section.album a{
+	margin: 0!important;
+}
+section.album a img.attachment-thumbnail:hover{
+	-webkit-transform:scale(1.1);
+	-moz-transform:scale(1.1);
+}
+#main section.album a img.attachment-thumbnail{
+	margin:15px 12px !important;
+	border-radius: 6px;
+	border: 6px groove #fff;
+}
+/*---------------lightBox sl---------------*/
+div.dark{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left:0;
+	background: no-repeat rgba(0,0,0,0.8) center center; 
+	opacity: 0;
+	display: none;
+}
+/*div.dark div.imgtext{
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 200px;
+	height: auto;
+	display: none;
+	opacity: 0;
+	float: right;
+
+}
+span.hidden{
+	display: none;
+	opacity: 0;
+}*/
+/*---------------linked---------------*/
+
